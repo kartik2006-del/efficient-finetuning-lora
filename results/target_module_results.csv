@@ -1,0 +1,4 @@
+experiment,setting,trainable_params,trainable_percent,training_time_sec,train_loss,eval_loss
+Target Module Comparison,Q + V,1081344,0.2184,4.729441,1.977768,1.549908
+Target Module Comparison,Q + K + V,1474560,0.2976,4.118824,1.952317,1.520788
+Target Module Comparison,Q + K + V + O,2162688,0.4359,4.807529,1.833368,1.370771

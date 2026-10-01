@@ -1,0 +1,5 @@
+experiment,setting,trainable_params,trainable_percent
+LoRA Rank Ablation,r=4,270336,0.0547
+LoRA Rank Ablation,r=8,540672,0.1093
+LoRA Rank Ablation,r=16,1081344,0.2184
+LoRA Rank Ablation,r=32,2162688,0.4359

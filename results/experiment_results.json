@@ -1,0 +1,97 @@
+{
+    "rank_ablation": [
+        {
+            "experiment": "LoRA Rank Ablation",
+            "setting": "r=4",
+            "trainable_params": 270336,
+            "trainable_percent": 0.0547
+        },
+        {
+            "experiment": "LoRA Rank Ablation",
+            "setting": "r=8",
+            "trainable_params": 540672,
+            "trainable_percent": 0.1093
+        },
+        {
+            "experiment": "LoRA Rank Ablation",
+            "setting": "r=16",
+            "trainable_params": 1081344,
+            "trainable_percent": 0.2184
+        },
+        {
+            "experiment": "LoRA Rank Ablation",
+            "setting": "r=32",
+            "trainable_params": 2162688,
+            "trainable_percent": 0.4359
+        }
+    ],
+    "target_module_comparison": [
+        {
+            "experiment": "Target Module Comparison",
+            "setting": "Q + V",
+            "trainable_params": 1081344,
+            "trainable_percent": 0.2184,
+            "training_time_sec": 4.729441,
+            "train_loss": 1.977768,
+            "eval_loss": 1.549908
+        },
+        {
+            "experiment": "Target Module Comparison",
+            "setting": "Q + K + V",
+            "trainable_params": 1474560,
+            "trainable_percent": 0.2976,
+            "training_time_sec": 4.118824,
+            "train_loss": 1.952317,
+            "eval_loss": 1.520788
+        },
+        {
+            "experiment": "Target Module Comparison",
+            "setting": "Q + K + V + O",
+            "trainable_params": 2162688,
+            "trainable_percent": 0.4359,
+            "training_time_sec": 4.807529,
+            "train_loss": 1.833368,
+            "eval_loss": 1.370771
+        }
+    ],
+    "lora_vs_qlora": [
+        {
+            "method": "LoRA (Q + V)",
+            "trainable_params": 1081344,
+            "training_time_sec": 4.729441,
+            "peak_gpu_memory_gb": 9.8,
+            "train_loss": 1.9778,
+            "eval_loss": 1.5499
+        },
+        {
+            "method": "QLoRA (Q + V)",
+            "trainable_params": 1081344,
+            "training_time_sec": 12.3,
+            "peak_gpu_memory_gb": 1.88,
+            "train_loss": 2.0404,
+            "eval_loss": 1.626
+        }
+    ],
+    "error_analysis": [
+        {
+            "category": "Valid variation",
+            "count": 6
+        },
+        {
+            "category": "Incorrect",
+            "count": 1
+        },
+        {
+            "category": "Partial",
+            "count": 1
+        },
+        {
+            "category": "Incomplete",
+            "count": 1
+        },
+        {
+            "category": "Instruction-following error",
+            "count": 1
+        }
+    ]
+}

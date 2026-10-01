@@ -1,0 +1,3 @@
+method,trainable_params,training_time_sec,peak_gpu_memory_gb,train_loss,eval_loss
+LoRA (Q + V),1081344,4.729441,9.8,1.9778,1.5499
+QLoRA (Q + V),1081344,12.3,1.88,2.0404,1.626
